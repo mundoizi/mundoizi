@@ -1,0 +1,84 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  background-image: url("../img/tile.webp"), linear-gradient(to bottom, rgba(31, 31, 31, 0.2), rgba(241, 241, 241, 0.1));
+  background-attachment: fixed;
+}
+
+body {
+  background: 0 0;
+  background-image: url("../img/backgroundLogo.webp");
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.content {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .card {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(31, 31, 31, 0.2);
+  width: 640px;
+  max-width: 80vw;
+}
+.content .card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.content .card form input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 5px 0;
+  color: unset;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  font-size: 18px;
+  border-bottom: solid 1px;
+  border-color: rgba(31, 31, 31, 0.2);
+}
+.content .card form button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  border: solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all 0.5s;
+  font-size: 1em;
+  padding: 4px 8px 3px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-color: rgba(31, 31, 31, 0.2);
+}
+.content .card form button:hover {
+  border-color: rgba(31, 31, 31, 0.5);
+}
